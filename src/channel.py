@@ -3,7 +3,7 @@ from googleapiclient.discovery import build
 import isodate
 import json
 api_key: str = os.getenv('YT_API_KEY')
-youtube = build('youtube', 'v3', developerKey='AIzaSyD6kb6VhpM1BZZX3-F5Z6qY0uG9Q1vY_Ig')
+youtube = build('youtube', 'v3', developerKey=api_key)
 
 class Channel:
     """Класс для ютуб-канала"""
